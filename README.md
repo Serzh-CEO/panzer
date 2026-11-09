@@ -19,11 +19,16 @@ python main.py
 | Move | W A S D | Arrow keys |
 | Shoot | Space | L |
 | Restart | R | R |
-
 ## Map editor
 
-`python cart_maker.py` opens the level editor. The map is a 26x19 grid stored in `gamemap.py`
-(`0` – empty, `1` – indestructible block, `2` – brick block).
+`python cart_maker.py` opens the level editor (26x19 grid, saved to `map.txt`).
+
+| Key | Action |
+|---|---|
+| 1 / 2 / 3 / 4 | Select brick / destructible block / heart / shield |
+| D (hold) | Draw under the mouse |
+| Space (hold) | Erase |
+| S | Save map |
 
 ## Project structure
 
