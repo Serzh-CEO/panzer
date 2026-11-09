@@ -32,3 +32,7 @@ python main.py
 - `gamemap.py` – level layout
 - `cart_maker.py` – map editor
 - `res/` – sprites and textures
+
+##Screenshot
+<img width="1201" height="883" alt="image" src="https://github.com/user-attachments/assets/ed4d9295-896f-4ede-af0f-f7ff60de74bf" />
+
