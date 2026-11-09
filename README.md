@@ -3,6 +3,8 @@
 A two-player tank battle game written in Python with [pygame](https://www.pygame.org/).
 Destroy the other tank, pick up hearts, shields and ammo, and use the level editor to draw your own maps.
 
+>Written in 2023–2024, uploaded to GitHub in November 2026.
+
 ## Run
 
 ```bash
