@@ -9,10 +9,10 @@ pygame.init()
 rungame = True
 FPS = 60
 
-brick_block = pygame.image.load('res\\brick_block.jpg')
+brick_block = pygame.image.load('res/brick_block.jpg')
 brick_block = pygame.transform.scale(brick_block,(size,size))
 
-green_block = pygame.image.load('res\\green_block.jpeg')
+green_block = pygame.image.load('res/green_block.jpeg')
 green_block = pygame.transform.scale(green_block,(size,size))
 
 red = (255,0,0)

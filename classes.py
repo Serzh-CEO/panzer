@@ -68,7 +68,7 @@ class Bullet(pygame.Rect):
             self.w,self.h = self.b,self.a
         else:
             pass
-        self.img = pygame.image.load('res\\bullet.png').convert_alpha()
+        self.img = pygame.image.load('res/bullet.png').convert_alpha()
         self.img = pygame.transform.scale(self.img,(self.w,self.h))
         self.rotate_to(self.rt_an)
         self.parent = parent
@@ -141,7 +141,7 @@ class Player(pygame.Rect):
         self.old_x,self.old_y = 0,0
         self.color = color
         self.text_x,self.text_y = 0,25
-        self.bang_img = pygame.image.load('res\\bang.png').convert_alpha()
+        self.bang_img = pygame.image.load('res/bang.png').convert_alpha()
         self.bang_img = pygame.transform.scale(self.bang_img,(self.w,self.h))
         self.sheild_zone_draw = False
         if self.color == blue:
@@ -183,7 +183,7 @@ class PlayerNuber1(Player):
         self.type = 1
         self.string_color = "blue"
         self.bulletrefull = RefullBullets('player1')
-        self.img = pygame.image.load('res\\blue_tank.png')
+        self.img = pygame.image.load('res/blue_tank.png')
         self.img = pygame.transform.scale(self.img,(tank_size,tank_size))
         super().__init__(x,y,self.img,blue)
 
@@ -224,7 +224,7 @@ class PlayerNuber2(Player):
         self.type = 2
         self.string_color = "red"
         self.bulletrefull = RefullBullets('player2')
-        self.img = pygame.image.load('res\\red_tank.png')
+        self.img = pygame.image.load('res/red_tank.png')
         self.img = pygame.transform.scale(self.img,(tank_size,tank_size))
         super().__init__(x,y,self.img,red)
     def move(self):  
@@ -318,9 +318,9 @@ class Loot(pygame.Rect):
         self.timer = 0
         self.player_id = 0
         if self.type == 'heart':
-            self.img = pygame.image.load('res\\heart.png').convert_alpha()
+            self.img = pygame.image.load('res/heart.png').convert_alpha()
         elif self.type == 'sheild':
-            self.img = pygame.image.load('res\\sheild.png').convert_alpha()
+            self.img = pygame.image.load('res/sheild.png').convert_alpha()
             self.rev_time = 30*10
         else:
             pass
